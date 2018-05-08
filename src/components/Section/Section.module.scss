@@ -1,0 +1,49 @@
+@import "../../assets/master";
+
+$headerHeight: 45px;
+
+.section {
+  padding: 20px 0;
+}
+
+.green {
+  background-color: $green;
+  color: $black;
+}
+
+.white {
+  background-color: $white;
+  color: $black;
+}
+
+.name {
+  font-weight: 300;
+  line-height: $headerHeight;
+  font-size: 32px;
+}
+
+.collapseBtn {
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: $headerHeight;
+}
+
+.header {
+  cursor: pointer;
+  height: $headerHeight;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  composes: container from '../../index.scss';
+}
+
+@media screen and (min-width: $smallLow) and (max-width: $midLow - 1) {
+  .name {
+    font-size: 18px;
+  }
+}

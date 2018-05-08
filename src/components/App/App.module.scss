@@ -1,0 +1,37 @@
+@import "../../assets/master";
+
+.header {
+  background-color: $blue;
+  padding: 20px 0;
+}
+
+.h1 {
+  margin: 0;
+}
+
+.sgreen {
+  font-weight: 600;
+  color: $white;
+}
+
+.container {
+  composes: container from '../../index.scss';
+}
+
+.main {
+  min-height: calc(100vh - 80px);
+}
+
+.footer {
+  height: 80px;
+  padding: 20px 0;
+  background-color: $darkBlue;
+  color: $white;
+  width: 100%;
+}
+
+@media screen and (min-width: $smallLow) and (max-width: $midLow - 1) {
+  .h1 {
+    font-size: 18px;
+  }
+}

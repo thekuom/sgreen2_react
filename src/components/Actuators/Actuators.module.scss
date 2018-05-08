@@ -1,0 +1,19 @@
+@import "../../assets/master";
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.group {}
+
+@media screen and (min-width: $smallLow) and (max-width: $midLow - 1) {
+  .group {
+    width: 100%;
+  }
+}
+
+.groupName {
+  font-weight: 500;
+}

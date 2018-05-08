@@ -1,0 +1,52 @@
+@import "../../assets/master";
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active {
+  background-color: $green;
+}
+
+.inactive {
+  background-color: #ff0000;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.graphLarge, .graphSmall {}
+
+@media screen and (min-width: $smallLow) and (max-width: $midLow - 1) {
+  .graphLarge {
+    width: 100%;
+  }
+
+  .graphSmall {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: $midLow) {
+  .graphSmall {
+    width: 500px;
+  }
+
+  .graphLarge {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: $largeLow) {
+  .graphLarge {
+    width: 1000px;
+  }
+}
